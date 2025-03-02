@@ -12,7 +12,7 @@ public class calculadora {
 
         System.out.println("Digite Seu Nome:");
         String nome = sc.nextLine();
-        System.out.println("Olá -" + nome + "- seja bem vindo!.");
+        System.out.println("Olá - " + nome + " - seja bem vindo!.");
         System.out.println("MENU DE OPERACOES");
         System.out.println("ESCOLHA UMA OPCÂO 1 a 5");
         System.out.println("1-ADICAO");
@@ -25,7 +25,16 @@ public class calculadora {
         switch (opcao) {
             case 1:
                 x.somar();
-
+                break;
+            case 2:
+                x.subtrair();
+                break;
+            case 3:
+                x.multiplicar();
+                break;
+            case 4:
+                x.dividir();
+                break;
         }
 
 
