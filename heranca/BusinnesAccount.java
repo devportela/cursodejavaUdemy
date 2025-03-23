@@ -26,5 +26,10 @@ public class BusinnesAccount extends account {
           balance += amount - 10.0;
         }
     }
+    @Override //indica ao complilador que estamos sobrepondo o metodo withdraw
+    public void withdraw(double amount){
+    super.withdraw(amount);
+    balance -= 2.0;
+    }
 
 }
