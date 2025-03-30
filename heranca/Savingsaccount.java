@@ -1,6 +1,6 @@
 package heranca;
 
-public class Savingsaccount extends account{
+public  class Savingsaccount extends account{
 
     private Double interestRate;
 
@@ -24,7 +24,7 @@ public class Savingsaccount extends account{
         balance += balance * interestRate;
     }
      @Override //indica ao complilador que estamos sobrepondo o metodo withdraw
-    public void withdraw(double amount){
+    public  final void withdraw(double amount){
        balance -= amount;
     }
 
