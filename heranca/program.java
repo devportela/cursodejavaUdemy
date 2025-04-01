@@ -1,18 +1,16 @@
 package heranca;
-
 import heranca.account;
+import heranca.Savingsaccount;
+
 
 public class program {
     public static void main(String[] args) {
 
-        account acc1 = new account(1001,"gustavo",1000.0);
-        acc1.withdraw(200.0);
-        System.out.println(acc1.getBalance());
+        Account x = new Account(1020, "Alex", 1000.0);
+        Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+        // o compilador nao entende o metodo withdraw, ele apenas reconhece as variaveis que foram declaradas com a instacianção da classe.
 
-        account acc2 = new Savingsaccount(1002,"joao",1000.0,0.01);
-        System.out.println(acc2.getBalance());
-
-        account acc3 = new BusinnesAccount(1003,"bob",1000.0,500.0);
-        System.out.println(acc3.getBalance());
     }
 }
