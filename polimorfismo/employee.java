@@ -1,6 +1,7 @@
 package polimorfismo;
 
 public class employee {
+
     private String name;
     private Integer hours;
     private Double valuePerHour;
@@ -26,6 +27,10 @@ public class employee {
         return hours;
     }
 
+    public void setHours(Integer hours) {
+        this.hours = hours;
+    }
+
     public Double getValuePerHour() {
         return valuePerHour;
     }
@@ -34,13 +39,7 @@ public class employee {
         this.valuePerHour = valuePerHour;
     }
 
-    public void setHours(Integer hours) {
-        this.hours = hours;
-    }
-
     public double payment() {
         return hours * valuePerHour;
     }
-
-
 }
