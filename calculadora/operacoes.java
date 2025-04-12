@@ -2,56 +2,50 @@ package calculadora;
 
 import java.util.Scanner;
 
+
 public class operacoes {
-    Scanner sc = new Scanner(System.in);
 
-    void somar() {
-
-
-        System.out.println("Digite o primeiro valor:");
-        int n1 = sc.nextInt();
-        System.out.println("Digite o segundo valor:");
-        int n2 = sc.nextInt();
-        int soma = n1 + n2;
-        System.out.println("a adicao dos numeros é de " + soma);
-
+    public static void somar() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o primeiro número: ");
+        double a = sc.nextDouble();
+        System.out.print("Digite o segundo número: ");
+        double b = sc.nextDouble();
+        double resultado = a + b;
+        System.out.println("Resultado da soma: " + resultado);
     }
 
-    void subtrair() {
-
-
-        System.out.println("Digite o primeiro valor:");
-        int n1 = sc.nextInt();
-        System.out.println("Digite o segundo valor:");
-        int n2 = sc.nextInt();
-        int subtracao = n1 - n2;
-        System.out.println("a subtracao dos numeros é de " + subtracao);
-
+    public static void subtrair() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o primeiro número: ");
+        double a = sc.nextDouble();
+        System.out.print("Digite o segundo número: ");
+        double b = sc.nextDouble();
+        double resultado = a - b;
+        System.out.println("Resultado da subtração: " + resultado);
     }
 
-    void multiplicar() {
-
-
-        System.out.println("Digite o primeiro valor:");
-        int n1 = sc.nextInt();
-        System.out.println("Digite o segundo valor:");
-        int n2 = sc.nextInt();
-        int multiplicacao = n1 * n2;
-        System.out.println("a multiplicacao dos numeros é de " + multiplicacao);
-
+    public static void multiplicar() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o primeiro número: ");
+        double a = sc.nextDouble();
+        System.out.print("Digite o segundo número: ");
+        double b = sc.nextDouble();
+        double resultado = a * b;
+        System.out.println("Resultado da multiplicação: " + resultado);
     }
 
-    void dividir() {
-
-
-        System.out.println("Digite o primeiro valor:");
-        int n1 = sc.nextInt();
-        System.out.println("Digite o segundo valor:");
-        int n2 = sc.nextInt();
-        int divisao = n1 / n2;
-        System.out.println("a divisao dos numeros é de " + divisao);
-
+    public static void dividir() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o primeiro número: ");
+        double a = sc.nextDouble();
+        System.out.print("Digite o segundo número: ");
+        double b = sc.nextDouble();
+        if (b != 0) {
+            double resultado = a / b;
+            System.out.println("Resultado da divisão: " + resultado);
+        } else {
+            System.out.println("Não é possível dividir por zero.");
+        }
     }
-
-
 }
