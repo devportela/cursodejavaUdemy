@@ -1,4 +1,4 @@
-package dataHora;
+package excecoes;
 
 import java.io.File;
 import java.io.IOException;
