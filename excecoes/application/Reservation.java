@@ -45,7 +45,7 @@ public class Reservation {
     public String toString(){
         return "Room"
                 +roomNuber
-                +", check-in"
+                +", check-in";
 
 
     }

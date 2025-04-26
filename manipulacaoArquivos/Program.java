@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) { //codigo para ler o conteudo do arquivo teste.txt e mostrar na tela
 
-        File file = new File("C:\\temp\\teste.txt");
+        File file = new File("C:\\temp\\in.txt.txt");
         Scanner sc = null;
 
         try {
