@@ -1,4 +1,4 @@
 package composicao;
 
-public class teste {
+public class teste {dsadasdsadasdasdasdsadasds
 }
